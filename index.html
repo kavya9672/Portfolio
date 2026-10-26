@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Kavya Mittal — Profile</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css" />
   </head>
   <body>
     <header class="site-header">
@@ -17,7 +18,14 @@
       <section id="about" aria-labelledby="about-heading">
         <h2 id="about-heading">About</h2>
         <p>
-           I m kavya mittal , 2nd year btech student of AI-DS , <!--Write a short introduction about yourself. Mention your background,
+          <h2> About Me</h2>
+
+          Hi, I'm Kavya Mittal, a B.Tech student specializing in Computer Science and Engineering (Artificial Intelligence & Data Science) at JECRC University.
+          
+          I'm passionate about Artificial Intelligence, Prompt Engineering, and building practical digital solutions. I enjoy exploring how well-designed prompts can make AI tools more effective, solve problems, and turn ideas into useful applications.
+          
+          I'm continuously learning, experimenting with new technologies, and developing projects that combine creativity with technical skills. My goal is to grow as an AI enthusiast and developer while creating innovative solutions that make a real-world impact.
+        <!--Write a short introduction about yourself. Mention your background,
           what you enjoy working on, and what you are looking for next.--!>
         </p>
         <p>
@@ -29,11 +37,11 @@
       <section id="skills" aria-labelledby="skills-heading">
         <h2 id="skills-heading">Skills</h2>
         <ul class="skills-list">
-          <li>PLACEHOLDER Skill 1</li>
-          <li>PLACEHOLDER Skill 2</li>
-          <li>PLACEHOLDER Skill 3</li>
-          <li>PLACEHOLDER Skill 4</li>
-          <li>PLACEHOLDER Skill 5</li>
+          <li>Prompt Engineering</li>
+          <li>Artificial Intelligence (AI)</li>
+          <li>Data Science</li>
+          <li>Web Development</li>
+          <li>AI-Powered Applications</li>
         </ul>
       </section>
 
@@ -41,25 +49,82 @@
         <h2 id="projects-heading">Projects</h2>
         <ul class="projects-list">
           <li>
-            <a href="https://example.com/placeholder-project-1">PLACEHOLDER Project One</a>
-            <p>PLACEHOLDER Brief description of project one and the problem it solves.</p>
+            <a href="https://github.com/kavya9672/Python-codes.git">https://github.com/kavya9672/Python-codes.git</a>
+            <p>Basic Python codes.</p>
           </li>
           <li>
-            <a href="https://example.com/placeholder-project-2">PLACEHOLDER Project Two</a>
-            <p>PLACEHOLDER Brief description of project two and the technologies used.</p>
+            <a href="https://github.com/kavya9672/fixedbuggycode.git">https://github.com/kavya9672/fixedbuggycode.git</a>
+            <p>Fixed buggy code.</p>
           </li>
           <li>
-            <a href="https://example.com/placeholder-project-3">PLACEHOLDER Project Three</a>
-            <p>PLACEHOLDER Brief description of project three and your role on the team.</p>
+            <a href="https://github.com/kavya9672/Student_reading_list.git">https://student-reading-list.vercel.app/</a>
+            <p>Student reading list.</p>
+          </li>
+          
+          <li>
+            <a href="https://github.com/kavya9672/quiz.git"> https://quiz-nu-eight-81.vercel.app/</a>
+            <p>Interactive quiz.</p>
+          </li>
+          <li>
+            <a href="https://github.com/kavya9672/messycode.git">https://github.com/kavya9672/messycode.git</a>
+            <p>Fixing messy code.</p>
           </li>
         </ul>
       </section>
     </main>
+<section id="weather">
+      <h2>Weather</h2>
+  
+      <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter a city"
+      >
+  
+      <button id="weatherButton">
+          Get Weather
+      </button>
+  
+      <div id="weatherResult">
+          Enter a city to see the weather.
+      </div>
+  </section>
 
+<section class="ai-chat">
+  <h2>Ask My AI Assistant</h2>
+
+  <p>
+    Ask questions about my portfolio.
+  </p>
+
+  <div id="chatMessages" aria-live="polite"></div>
+
+  <div class="chat-input-row">
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Type your question..."
+    />
+
+    <button id="sendButton" type="button">
+      Send
+    </button>
+  </div>
+
+  <p id="chatStatus" role="status"></p>
+
+  <p class="chat-note">
+    AI chat works in the local classroom
+    demonstration only. The API key is
+    not published with this website.
+  </p>
+</section>
     <footer class="site-footer">
       <p>PLACEHOLDER Contact: your.email@example.com</p>
     </footer>
     <button id="themeToggle">Switch to Dark Mode</button>
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="config.js"></script>
   </body>
 </html>
